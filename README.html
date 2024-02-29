@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Website</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+
+        #myButton {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        #outputMessage {
+            margin-top: 20px;
+            font-size: 18px;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to an Interactive Website</h1>
+
+    <button id="myButton">Click me!</button>
+
+    <div id="outputMessage"></div>
+
+    <script>
+        document.getElementById("myButton").addEventListener("click", function() {
+            var outputDiv = document.getElementById("outputMessage");
+            outputDiv.textContent = "Button clicked! This website is now interactive!";
+        });
+    </script>
+
+</body>
+</html>
